@@ -1,0 +1,17 @@
+# Configuration for Cog ⚙
+# Reference: https://github.com/replicate/cog/blob/main/docs/yaml.md
+
+build:
+  gpu: true
+
+  python_version: "3.8"
+
+  python_packages:
+    - "nltk==3.7"
+    - "numpy==1.22.3"
+    - "tensorflow==2.8.0"
+    - "torch==1.11.0"
+    - "tqdm==4.64.0"
+    - "transformers==4.18.0"
+    - "wandb==0.12.15"
+
