@@ -4,7 +4,6 @@
 build:
   gpu: true
     
-  cuda: "11.3"
   
   python_version: "3.9"
 
@@ -12,13 +11,11 @@ build:
     - "jupyterlab==3.3.4"
     - "nltk==3.7"
     - "numpy==1.22.3"
+    - "torch==1.10.1"
     - "tqdm==4.64.0"
-      #    - "torch==1.11.0+cu112"
     - "transformers==4.11.3"
     - "wandb==0.12.15"
   run:
-    - "pip3 uninstall torch"
-    - "pip3 install torch>=1.10.1+cu113 -f https://download.pytorch.org/whl/torch_stable.html"
     - "pip3 install tensorflow==2.8.0"
     - >
       python -c 'from transformers import GPT2Tokenizer,GPT2LMHeadModel; m, t = GPT2LMHeadModel.from_pretrained("gpt2-large"), GPT2Tokenizer.from_pretrained("gpt2-large")'
