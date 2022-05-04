@@ -1,0 +1,11 @@
+name: cold
+channels:
+    - pytorch
+    - huggingface
+    - conda-forge
+    - defaults
+dependencies:
+    - python>=3.9
+    - pip
+    - pytorch
+    - transformers>=4.2
